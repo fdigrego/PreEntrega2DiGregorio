@@ -1,28 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 /* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    height: 100%;
+.logoTT {
+    border-radius: 50%;
+    margin-right: 10px;
+    align-content: flex-end;
 }
-body {
-    line-height: 1.2;
+.brandTT {
+    font-weight: 300;
+    font-style: oblique;
 }
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
+.navTT {
+    font-size: larger;
+    align-content: flex-end;
 }
-input, button, textarea, select {
-    font: inherit;
+/* GALERIAS */
+.galeria {
+    display: grid;
+    /* overflow: hidden; */
+    /* margin-right:  -1rem; */
+    gap: 1rem;
+    /* grid-auto-columns: 5rem; */
+    /* grid-auto-flow: column; */
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(grid-auto-columns, minmax(15rem, 1fr));
+    min-width: 12rem;
 }
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-}
-.navbar {
-    display: flex;
-    background-color: rgb(227, 146, 239);
-    align-items: flex-start;
-    padding: 4px;
+.especial {
+    grid-column: span 2;
 }
