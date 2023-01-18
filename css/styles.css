@@ -19,22 +19,41 @@ body {
     font-weight: 300;
     font-style: oblique;
 }
-.navTT {
-    font-size: larger;
-    align-content: flex-end;
+body {
+    background-color: aquamarine;
+}
+.carousel-item img {
+    max-height: 40%;
+    max-width: 40%;
+}
+.card img {
+    border-radius: 15%;
+    max-height: 20%;
+    max-width: 20%;
 }
 /* GALERIAS */
-.galeria {
-    display: grid;
-    /* overflow: hidden; */
-    /* margin-right:  -1rem; */
-    gap: 1rem;
-    /* grid-auto-columns: 5rem; */
-    /* grid-auto-flow: column; */
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(grid-auto-columns, minmax(15rem, 1fr));
-    min-width: 12rem;
-}
-.especial {
-    grid-column: span 2;
-}
+
+.card-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 400px;
+    margin: 20px;
+    box-shadow: 2px 2px 5px #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 90%;
+      margin: 10px;
+    }
+  }
